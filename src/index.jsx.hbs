@@ -1,0 +1,17 @@
+import * as React from 'react';
+import PropTypes from 'prop-types';
+
+export default function {{upperCamelCased pkgName}}(props) {
+  const { title, ...others } = props;
+  return (
+    <div className="{{upperCamelCased pkgName}}" {...others}> Hello {{upperCamelCased pkgName}} </div>
+  )
+}
+
+{{upperCamelCased pkgName}}.propTypes = {
+  title: PropTypes.string.isRequired,
+}
+
+{{upperCamelCased pkgName}}.defaultProps = {
+  title: "{{upperCamelCased pkgName}}"
+}
