@@ -7,13 +7,13 @@ title: Simple Usage
 ```jsx
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import TestText from '{{pkgScope}}/{{pkgName}}';
+import {{upperCamelCased pkgName}} from '{{pkgScope}}/{{pkgName}}';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TestText />
+        <{{upperCamelCased pkgName}} />
       </div>
     );
   }
